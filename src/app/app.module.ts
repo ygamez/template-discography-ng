@@ -11,13 +11,23 @@ import { FooterComponent } from './shared/footer/footer.component';
 
 import { ComponentsModule } from './components/components.module';
 import { ExamplesModule } from './examples/examples.module';
+import { DashboardComponent } from './modules/admin/dashboard/dashboard.component';
+import { ForsalesComponent } from './modules/admin/forsales/forsales.component';
+import { ProductsComponent } from './modules/admin/products/products.component';
+import { ArtistsComponent } from './modules/admin/artists/artists.component';
+import { MessageComponent } from './modules/admin/message/message.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    DashboardComponent,
+    ForsalesComponent,
+    ProductsComponent,
+    ArtistsComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,

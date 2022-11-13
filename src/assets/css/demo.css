@@ -98,11 +98,12 @@
 }
 
 .navigation-example {
-    background-image: url('../img/ilya-yakover.jpg');
+    /* background-image: url('../img/ilya-yakover.jpg'); */
+    background-image: url('../img/bruno-abatti.jpg');
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-    margin-top: 0;
+    margin-top: 8;
 }
 
 #notifications {
