@@ -11,6 +11,7 @@ import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.compo
 import { DashboardComponent } from './modules/admin/dashboard/dashboard.component';
 import { ProductsComponent } from './modules/admin/products/products.component';
 import { ForsalesComponent } from './modules/admin/forsales/forsales.component';
+import { ArtistsComponent } from './modules/admin/artists/artists.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
@@ -21,6 +22,7 @@ const routes: Routes =[
     { path: 'landing',          component: LandingComponent },
     { path: 'nucleoicons',      component: NucleoiconsComponent },
     { path: 'products',      component: ProductsComponent },
+    { path: 'artists',      component: ArtistsComponent },
     { path: 'forsales',      component: ForsalesComponent}
 ];
 
