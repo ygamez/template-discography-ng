@@ -1,9 +1,9 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="500">
     <div class="container">
         <div class="navbar-translate">
-            <a class="navbar-brand" routerLink = "./dashboard">PLANET RECORDS</a>
+            <a class="navbar-brand" routerLink = "./dashboard">Dashboard</a>
             <div ngbDropdown class="navbar-brand d-inline-block dropdown-primary">
-                <a class="nav-link red screen-reader-text" id="dropdownBasic1" ngbDropdownToggle>IDIOMA 
+                <a class="nav-link red screen-reader-text" id="dropdownBasic1" ngbDropdownToggle>IDIOMA
                     <i class="fa fa-language"></i>
                 </a>
                 <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
@@ -17,41 +17,41 @@
                 <span class="navbar-toggler-bar"></span>
                 <span class="navbar-toggler-bar"></span>
             </button>
-                
+
         </div>
         <div class="navbar-collapse" id="navbarToggler">
-            <ul class="navbar-nav ml-auto">                
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a routerLink = "./news" class="nav-link"  title="Follow" data-placement="bottom" >
+                    <a routerLink = "./news" class="nav-link"  title="News" data-placement="bottom" >
                         <i class="fa fa-newspaper-o"></i>
                         <p>News</p>
                     </a>
                 </li>
                 <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" [routerLink]="['/forsales']" >
+                    <a class="nav-link" rel="tooltip" title="Forsales" data-placement="bottom" [routerLink]="['/forsales']" >
                         <i class="fa fa-shopping-bag"></i>
-                        <p>En Venta</p>
+                        <p>Forsales</p>
                     </a>
                 </li>
                 <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="/forsales" >
+                    <a class="nav-link" rel="tooltip" title="Music" data-placement="bottom" href="/forsales" >
                         <i class="fa fa-music"></i>
                         <p>Music</p>
                     </a>
                 </li>
                 <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="/forsales" >
+                    <a class="nav-link" rel="tooltip" title="Generos" data-placement="bottom" href="/forsales" >
                         <i class="fa fa-briefcase"></i>
                         <p>Generos</p>
                     </a>
                 </li>
                 <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" routerLink = "./artists" >
+                    <a class="nav-link" rel="tooltip" title="Artists" data-placement="bottom" routerLink = "./artists" >
                         <i class="fa fa-user-circle-o"></i>
                         <p>Artists</p>
                     </a>
                 </li>
-                
+
                 <!-- <li class="nav-item">
                     <div ngbDropdown class="d-inline-block dropdown">
                         <a class="nav-link" id="dropdownBasic1" ngbDropdownToggle>Dropdown</a>
@@ -72,7 +72,7 @@
                         </div>
                     </div>
                 </li> -->
-                
+
 
                 <li class="nav-item">
                     <div class="justify-content-end" id="navbar-menu-icon">
@@ -81,12 +81,12 @@
                                 <a class="nav-link" href="#pk"><i class="nc-icon nc-email-85" aria-hidden="true"></i></a>
                             </li> -->
                             <li class="nav-item">
-                                <a class="nav-link" href="#pk"><i class="nc-icon nc-single-02" aria-hidden="true"></i></a>
+                                <a class="nav-link" title="Profile" data-placement="bottom" href="#/user-profile"><i class="nc-icon nc-single-02" aria-hidden="true"></i></a>
                             </li>
                             <li class="nav-item ">
                                 <div ngbDropdown class="dropdown" placement="bottom-left">
                                 <a class="nav-link" id="dropdownBasic1" ngbDropdownToggle><i class="nc-icon nc-settings-gear-65" aria-hidden="true"></i></a>
-                                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-danger dropdown-menu-right navbar-brand dropdown-primary">
+                                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
                                         <a class="dropdown-item">News</a>
                                         <a class="dropdown-item">Sales</a>
                                         <a class="dropdown-item">Products</a>
@@ -99,7 +99,7 @@
                         </ul>
                     </div>
                 </li>
-                
+
                 <li class="nav-item" *ngIf="!isDocumentation()">
                     <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/" target="_blank">
                         <i class="fa fa-twitter fa-5x"></i>
@@ -118,7 +118,7 @@
                         <p class="d-lg-none">Instagram</p>
                     </a>
                 </li>
-                
+
                 <!-- <li class="nav-item" *ngIf="!isDocumentation()">
                     <a href="http://pk2-angular.(EE)Team.com/documentation/tutorial" class="nav-link" target="_blank"><i class="nc-icon nc-book-bookmark"></i> Documentation</a>
                 </li> -->
@@ -129,9 +129,9 @@
                     <a [routerLink]="['/home']" *ngIf="!isDocumentation()" class="nav-link"><i class="nc-icon nc-layout-11"></i>Components</a>
                     <a [routerLink]="['/home']" *ngIf="isDocumentation()" class="nav-link">Back to Kit</a>
                 </li> -->
-                <li class="nav-item" *ngIf="isDocumentation()">
+                <!-- <li class="nav-item" *ngIf="isDocumentation()">
                     <a href="https://github.com/creativetimofficial/paper-kit-2-angular/issues?ref=pk2-free-local" target="_blank" class="nav-link">Have an issue</a>
-                </li>
+                </li> -->
             </ul>
         </div>
     </div>

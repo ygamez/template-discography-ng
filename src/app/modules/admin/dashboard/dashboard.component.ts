@@ -10,6 +10,7 @@ export class DashboardComponent implements OnInit {
 
   private toggleButton: any;
   private sidebarVisible: boolean;
+    page: number= 1;
 
   constructor(public location: Location, private element: ElementRef) { 
     this.sidebarVisible = false;

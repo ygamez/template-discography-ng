@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./artists.component.css']
 })
 export class ArtistsComponent implements OnInit {
+  page: number = 1;
 
   constructor() { }
 
