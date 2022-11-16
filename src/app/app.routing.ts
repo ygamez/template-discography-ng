@@ -12,18 +12,23 @@ import { DashboardComponent } from './modules/admin/dashboard/dashboard.componen
 import { ProductsComponent } from './modules/admin/products/products.component';
 import { ForsalesComponent } from './modules/admin/forsales/forsales.component';
 import { ArtistsComponent } from './modules/admin/artists/artists.component';
+import { UserProfileComponent } from './modules/admin/user-profile/user-profile.component';
+import { NewsComponent } from './modules/admin/news/news.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
     { path: 'dashboard',        component: DashboardComponent },
     { path: 'admin',             component: ComponentsComponent },
-    { path: 'user-profile',     component: ProfileComponent },
+    { path: 'artist-profile',     component: ProfileComponent },
+    { path: 'user-profile',     component: UserProfileComponent },
     { path: 'signup',           component: SignupComponent },
     { path: 'landing',          component: LandingComponent },
     { path: 'nucleoicons',      component: NucleoiconsComponent },
     { path: 'products',      component: ProductsComponent },
+    { path: 'detalle',      component: ProductsComponent },
     { path: 'artists',      component: ArtistsComponent },
-    { path: 'forsales',      component: ForsalesComponent}
+    { path: 'forsales',      component: ForsalesComponent},
+    { path: 'news',      component: NewsComponent}
 ];
 
 @NgModule({

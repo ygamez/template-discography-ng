@@ -1,9 +1,11 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="500">
     <div class="container">
         <div class="navbar-translate">
-            <a class="navbar-brand" routerLink = "./dashboard">PLANET MUSIC</a>
-            <div ngbDropdown class="navbar-brand d-inline-block dropdown">
-                <a class="nav-link" id="dropdownBasic1" ngbDropdownToggle>IDIOMA</a>
+            <a class="navbar-brand" routerLink = "./dashboard">PLANET RECORDS</a>
+            <div ngbDropdown class="navbar-brand d-inline-block dropdown-primary">
+                <a class="nav-link red screen-reader-text" id="dropdownBasic1" ngbDropdownToggle>IDIOMA 
+                    <i class="fa fa-language"></i>
+                </a>
                 <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
                     <a class="dropdown-item">ITALIAN</a>
                     <a class="dropdown-item">SPANISH</a>
@@ -20,7 +22,7 @@
         <div class="navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto">                
                 <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a routerLink = "./products" class="nav-link"  title="Follow" data-placement="bottom" >
+                    <a routerLink = "./news" class="nav-link"  title="Follow" data-placement="bottom" >
                         <i class="fa fa-newspaper-o"></i>
                         <p>News</p>
                     </a>
@@ -49,6 +51,55 @@
                         <p>Artists</p>
                     </a>
                 </li>
+                
+                <!-- <li class="nav-item">
+                    <div ngbDropdown class="d-inline-block dropdown">
+                        <a class="nav-link" id="dropdownBasic1" ngbDropdownToggle>Dropdown</a>
+                        <a class="nav-link" id="dropdownBasic1" ngbDropdownToggle><i class="nc-icon nc-single-02" aria-hidden="true"></i>&nbsp;Profile</a>
+                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
+                            <a routerLinkActive="active" [routerLink]="['/user-profile']" class="dropdown-item">
+                                <i class="fa fa-user-o"></i>
+                                <span>Update</span>
+                            </a>
+                            <a routerLinkActive="active" [routerLink]="['/user-profile']" class="dropdown-item">
+                                <i class="nc-icon nc-settings-gear-65"></i>
+                                <span>Settings</span>
+                            </a>
+                            <a routerLinkActive="active" [routerLink]="['/user-profile']" class="dropdown-item">
+                                <i class="fa fa-user-o"></i>
+                                <span>Others</span>
+                            </a>
+                        </div>
+                    </div>
+                </li> -->
+                
+
+                <li class="nav-item">
+                    <div class="justify-content-end" id="navbar-menu-icon">
+                        <ul class="navbar-nav">
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="#pk"><i class="nc-icon nc-email-85" aria-hidden="true"></i></a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pk"><i class="nc-icon nc-single-02" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="nav-item ">
+                                <div ngbDropdown class="dropdown" placement="bottom-left">
+                                <a class="nav-link" id="dropdownBasic1" ngbDropdownToggle><i class="nc-icon nc-settings-gear-65" aria-hidden="true"></i></a>
+                                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-danger dropdown-menu-right navbar-brand dropdown-primary">
+                                        <a class="dropdown-item">News</a>
+                                        <a class="dropdown-item">Sales</a>
+                                        <a class="dropdown-item">Products</a>
+                                        <a class="dropdown-item">Artists</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item">LogOuth</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                
                 <li class="nav-item" *ngIf="!isDocumentation()">
                     <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/" target="_blank">
                         <i class="fa fa-twitter fa-5x"></i>
@@ -67,11 +118,12 @@
                         <p class="d-lg-none">Instagram</p>
                     </a>
                 </li>
+                
                 <!-- <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a href="http://pk2-angular.creative-tim.com/documentation/tutorial" class="nav-link" target="_blank"><i class="nc-icon nc-book-bookmark"></i> Documentation</a>
+                    <a href="http://pk2-angular.(EE)Team.com/documentation/tutorial" class="nav-link" target="_blank"><i class="nc-icon nc-book-bookmark"></i> Documentation</a>
                 </li> -->
                 <!-- <li class="nav-item" *ngIf="isHome()">
-                    <a href="https://www.creative-tim.com/product/paper-kit-2-pro-angular?ref=pk2-angular-free-local" target="_blank" class="btn btn-danger btn-round">Upgrade to Pro</a>
+                    <a href="https://www.(EE)Team.com/product/paper-kit-2-pro-angular?ref=pk2-angular-free-local" target="_blank" class="btn btn-danger btn-round">Upgrade to Pro</a>
                 </li> -->
                 <!-- <li class="nav-item" *ngIf="!isHome()">
                     <a [routerLink]="['/home']" *ngIf="!isDocumentation()" class="nav-link"><i class="nc-icon nc-layout-11"></i>Components</a>

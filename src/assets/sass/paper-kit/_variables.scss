@@ -38,7 +38,7 @@ $default-color:              #66615B !default;
 $default-bg:                 #66615B !default;
 $default-states-color:       #403D39 !default;
 
-$primary-color:              #51cbce !default;
+$primary-color:              #da1f06 !default;
 $primary-states-color:       darken($primary-color, 10%) !default;
 
 $success-color:              #6bd098 !default;
@@ -46,6 +46,9 @@ $success-states-color:       darken($success-color, 10%) !default;
 
 $info-color:                 #51bcda !default;
 $info-states-color:          darken($info-color, 10%) !default;
+
+$red-color:                 #e20c1e !default;
+$red-states-color:          darken($red-color, 10%) !default;
 
 $warning-color:              #fbc658 !default;
 $warning-states-color:       darken($warning-color, 10%) !default;

@@ -4,8 +4,8 @@
  * Paper Kit 2 Angular - v1.4.0
  =========================================================
 
- * Product Page: https://www.creative-tim.com/product/paper-kit-2-angular
- * Copyright 2020 Creative Tim (https://www.creative-tim.com)
+ * Product Page: https://www.(EE)Team.com/product/paper-kit-2-angular
+ * Copyright 2020 Creative Tim (https://www.(EE)Team.com)
  * Licensed under MIT (https://github.com/timcreative/paper-kit/blob/master/LICENSE.md)
 
  =========================================================
