@@ -39,6 +39,7 @@ export class NgbdModalContent {
 export class SeeMoreProductComponent implements OnInit {
 
   constructor(private modalService: NgbModal) {}
+  
     open() {
         const modalRef = this.modalService.open(NgbdModalContent);
         modalRef.componentInstance.name = 'World';

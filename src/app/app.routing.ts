@@ -14,6 +14,8 @@ import { ForsalesComponent } from './modules/admin/forsales/forsales.component';
 import { ArtistsComponent } from './modules/admin/artists/artists.component';
 import { UserProfileComponent } from './modules/admin/user-profile/user-profile.component';
 import { NewsComponent } from './modules/admin/news/news.component';
+import { AddNewsComponent } from './modules/admin/news/components/add-news/add-news.component';
+import { AddArtistComponent } from './modules/admin/artists/addArtist/add-artist/add-artist.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
@@ -27,8 +29,10 @@ const routes: Routes =[
     { path: 'products',      component: ProductsComponent },
     { path: 'detalle',      component: ProductsComponent },
     { path: 'artists',      component: ArtistsComponent },
+    { path: 'addartists',      component: AddArtistComponent },
     { path: 'forsales',      component: ForsalesComponent},
-    { path: 'news',      component: NewsComponent}
+    { path: 'news',      component: NewsComponent},
+    { path: 'addnews',      component: AddNewsComponent}
 ];
 
 @NgModule({

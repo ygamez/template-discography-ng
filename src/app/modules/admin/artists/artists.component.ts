@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
+
 
 @Component({
   selector: 'app-artists',
@@ -8,9 +11,11 @@ import { Component, OnInit } from '@angular/core';
 export class ArtistsComponent implements OnInit {
   page: number = 1;
 
-  constructor() { }
-
+  constructor( ) { 
+   }
+  
   ngOnInit(): void {
+   
   }
 
 }

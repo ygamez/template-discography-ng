@@ -18,6 +18,8 @@ import { ArtistsComponent } from './modules/admin/artists/artists.component';
 import { MessageComponent } from './modules/admin/message/message.component';
 import { UserProfileComponent } from './modules/admin/user-profile/user-profile.component';
 import { NewsComponent } from './modules/admin/news/news.component';
+import { AddNewsComponent } from './modules/admin/news/components/add-news/add-news.component';
+import { AddArtistComponent } from './modules/admin/artists/addArtist/add-artist/add-artist.component';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import { NewsComponent } from './modules/admin/news/news.component';
     ArtistsComponent,
     MessageComponent,
     UserProfileComponent,
-    NewsComponent
+    NewsComponent,
+    AddNewsComponent,
+    AddArtistComponent
   ],
   imports: [
     BrowserModule,

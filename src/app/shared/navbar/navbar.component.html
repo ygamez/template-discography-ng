@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="500">
     <div class="container">
         <div class="navbar-translate">
-            <a class="navbar-brand" routerLink = "./dashboard">Dashboard</a>
+            <a class="navbar-brand" href="#/dashboard">Dashboard</a>
             <div ngbDropdown class="navbar-brand d-inline-block dropdown-primary">
                 <a class="nav-link red screen-reader-text" id="dropdownBasic1" ngbDropdownToggle>IDIOMA
                     <i class="fa fa-language"></i>
@@ -22,13 +22,13 @@
         <div class="navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a routerLink = "./news" class="nav-link"  title="News" data-placement="bottom" >
+                    <a class="nav-link"  title="News" data-placement="bottom" href="#/news" >
                         <i class="fa fa-newspaper-o"></i>
                         <p>News</p>
                     </a>
                 </li>
                 <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="Artists" data-placement="bottom" routerLink = "./artists" >
+                    <a class="nav-link" rel="tooltip" title="Artists" data-placement="bottom" href="#/artists" >
                         <i class="fa fa-user-circle-o"></i>
                         <p>Artists</p>
                     </a>
