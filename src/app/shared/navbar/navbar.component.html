@@ -28,6 +28,12 @@
                     </a>
                 </li>
                 <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" title="Artists" data-placement="bottom" routerLink = "./artists" >
+                        <i class="fa fa-user-circle-o"></i>
+                        <p>Artists</p>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
                     <a class="nav-link" rel="tooltip" title="Forsales" data-placement="bottom" [routerLink]="['/forsales']" >
                         <i class="fa fa-shopping-bag"></i>
                         <p>Forsales</p>
@@ -45,12 +51,7 @@
                         <p>Generos</p>
                     </a>
                 </li>
-                <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="Artists" data-placement="bottom" routerLink = "./artists" >
-                        <i class="fa fa-user-circle-o"></i>
-                        <p>Artists</p>
-                    </a>
-                </li>
+                
 
                 <!-- <li class="nav-item">
                     <div ngbDropdown class="d-inline-block dropdown">
