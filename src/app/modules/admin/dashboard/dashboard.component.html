@@ -62,57 +62,279 @@
                 </nav> -->
 
                 <!-- <div class="navigation-example"> -->
-                <div class="col" >
 
-                    <div class="section" id="carousel">
-                        <div class="container">
-                            <div class="typography-line text-center text-danger">
-                                <h2>
-                                    Catalogue    
-                                </h2>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                          <!-- <div class="col">
+                            Primera de tres columnas
+                          </div> -->
+                          <div class="col-9">
+                            Segunda de tres columnas
+                          </div>
+                          <div class="col">
+                            Tercera de tres columnas
+                          </div>
+                        </div>
+                      </div>
+
+                    <div class="container-fluid">
+                        
+                    
+                        <div class="row">
+                            <div class="col-xl-9">
                                 
-                                <br />
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-8 mr-auto ml-auto">
-                                    <div class="card page-carousel">
-                                        <ngb-carousel>
-                                            <ng-template ngbSlide>
-                                                <img src="./assets/img/soroush-karimi.jpg" alt="Random first slide">
-                                                <div class="carousel-caption">
-                                                    <p>Somewhere</p>
+                                <div class="section" id="carousel">
+                                    <div class="container">
+                                        <div class="typography-line text-center text-danger">
+                                            <h2>
+                                                Catalogue    
+                                            </h2>
+                                            
+                                            <br />
+                                        </div>
+            
+                                        <div class="row">
+                                            <div class="col-md-12 mr-auto ml-auto">
+                                                <div class="card page-carousel">
+                                                    <ngb-carousel>
+                                                        <ng-template ngbSlide>
+                                                            <div class="">
+                                                                <div class="mr-auto ml-auto ">
+                                                                    <div class="card-avatar">
+                                                                        <a href="#avatar"> 
+                                                                            <img src="assets/img/ilya-yakover.jpg" class="img-thumbnail img-responsive img-fluid" alt="Rounded Image">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="card-block">
+                                                                        <a href="#paper-kit">
+                                                                            <div class="author">
+                                                                                <!-- <h4 class="card-title">Robert Orben</h4> -->
+                                                                                <h6 class="card-category">Polaco violinista volador</h6>
+                                                                            </div>
+                                                                        </a>
+                                                                        <p class="card-description text-center">
+                                                                        The strength of the team is each individual member. The strength of each member is the team. If you can laugh together, you can work together, silence isn’t golden, it’s deadly.
+                                                                        </p>
+                                                                    </div>
+                                                                    <!-- <a href="javascript:void(0)">Show more</a> -->
+                                                                    <app-modal-component></app-modal-component>
+                                                                </div>
+                                                            </div>
+                                                        </ng-template>
+                                                        <ng-template ngbSlide>
+                                                            <img src="./assets/img/federico-beccari.jpg" alt="Random second slide">
+                                                            <div class="carousel-caption">
+                                                                <p>Somewhere else</p>
+                                                            </div>
+                                                        </ng-template>
+                                                        <ng-template ngbSlide>
+                                                            <img src="./assets/img/joshua-stannard.jpg" alt="Random third slide">
+                                                            <div class="carousel-caption">
+                                                                <p>Here it is</p>
+                                                            </div>
+                                                        </ng-template>
+                                                    </ngb-carousel>
                                                 </div>
-                                            </ng-template>
-                                            <ng-template ngbSlide>
-                                                <img src="./assets/img/federico-beccari.jpg" alt="Random second slide">
-                                                <div class="carousel-caption">
-                                                    <p>Somewhere else</p>
-                                                </div>
-                                            </ng-template>
-                                            <ng-template ngbSlide>
-                                                <img src="./assets/img/joshua-stannard.jpg" alt="Random third slide">
-                                                <div class="carousel-caption">
-                                                    <p>Here it is</p>
-                                                </div>
-                                            </ng-template>
-                                        </ngb-carousel>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+
+                                <div class="typography-line text-center text-danger">
+                                    <h2>
+                                        News
+                                    </h2>
+                                    
+                                    <br />
+                                </div>
+                                
+                                <div class="main">
+                                    <div class="section text-center">
+                                        <div class="container">
+                                
+                                            <div class="row">
+                                
+                                                <div class="col-md-4 ">
+                                                    <div class="mr-auto ml-auto col-md-12 offset-md-1">
+                                                        <div class="card-avatar">
+                                                            <a href="#avatar"> 
+                                                                <img src="assets/img/daniel-olahs.jpg" class="img-thumbnail img-responsive" alt="Rounded Image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="card-block">
+                                                            <a href="#paper-kit">
+                                                                <div class="author">
+                                                                    <!-- <h4 class="card-title">Robert Orben</h4> -->
+                                                                    <h6 class="card-category">Brujas en planet R</h6>
+                                                                </div>
+                                                            </a>
+                                                            <p class="card-description text-center">
+                                                            The strength of the team is each individual member. The strength of each member is the team. If you can laugh together, you can work together, silence isn’t golden, it’s deadly.
+                                                            </p>
+                                                        </div>
+                                                        <!-- <a href="javascript:void(0)">Show more</a> -->
+                                                        <app-modal-component></app-modal-component>
+                                                    </div>
+                                                </div>
+                                    
+                                                <div class="col-md-4">
+                                                    <div class="mr-auto ml-auto col-md-12 offset-md-1">
+                                                        <div class="card-avatar">
+                                                            <a href="#avatar"> 
+                                                                <img src="assets/img/faces/clem-onojeghuo-3.jpg" class="img-thumbnail img-responsive" alt="Rounded Image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="card-block">
+                                                            <a href="#paper-kit">
+                                                                <div class="author">
+                                                                    <!-- <h4 class="card-title">Robert Orben</h4> -->
+                                                                    <h6 class="card-category">Developer canta super bien</h6>
+                                                                </div>
+                                                            </a>
+                                                            <p class="card-description text-center">
+                                                            The strength of the team is each individual member. The strength of each member is the team. If you can laugh together, you can work together, silence isn’t golden, it’s deadly.
+                                                            </p>
+                                                        </div>
+                                                        <!-- <a href="javascript:void(0)">Show more</a> -->
+                                                        <app-modal-component></app-modal-component>
+                                                    </div>
+                                                </div>
+                                
+                                                <div class="col-md-4">
+                                                    <div class="mr-auto ml-auto col-md-12 offset-md-1">
+                                                        <div class="card-avatar">
+                                                            <a href="#avatar"> 
+                                                                <img src="assets/img/ilya-yakover.jpg" class="img-thumbnail img-responsive" alt="Rounded Image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="card-block">
+                                                            <a href="#paper-kit">
+                                                                <div class="author">
+                                                                    <!-- <h4 class="card-title">Robert Orben</h4> -->
+                                                                    <h6 class="card-category">Polaco violinista volador</h6>
+                                                                </div>
+                                                            </a>
+                                                            <p class="card-description text-center">
+                                                            The strength of the team is each individual member. The strength of each member is the team. If you can laugh together, you can work together, silence isn’t golden, it’s deadly.
+                                                            </p>
+                                                        </div>
+                                                        <!-- <a href="javascript:void(0)">Show more</a> -->
+                                                        <app-modal-component></app-modal-component>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="mr-auto ml-auto col-md-12 offset-md-1">
+                                                        <div class="card-avatar">
+                                                            <a href="#avatar"> 
+                                                                <img src="assets/img/ilya-yakover.jpg" class="img-thumbnail img-responsive" alt="Rounded Image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="card-block">
+                                                            <a href="#paper-kit">
+                                                                <div class="author">
+                                                                    <!-- <h4 class="card-title">Robert Orben</h4> -->
+                                                                    <h6 class="card-category">Polaco violinista volador</h6>
+                                                                </div>
+                                                            </a>
+                                                            <p class="card-description text-center">
+                                                            The strength of the team is each individual member. The strength of each member is the team. If you can laugh together, you can work together, silence isn’t golden, it’s deadly.
+                                                            </p>
+                                                        </div>
+                                                        <!-- <a href="javascript:void(0)">Show more</a> -->
+                                                        <app-modal-component></app-modal-component>
+                                                    </div>
+                                                </div>
+                                    
+                                                    
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+
                             </div>
-                        </div>
-                    </div>
+                            <div class="col-xl-3">
+                                
+                                <div class="line text-danger">
+                                    <h2>For Sales</h2>
+                                </div>
+
+                                
+                                    <!-- <div class="col-xs-12 col-sm-12 col-md-8">
+                                        <a href = "#/user-profile" >                            
+                                            <h4 class="images-title">Free</h4>
+                                            <img src="assets/img/uriel-soberanes.jpg" class="img-rounded img-responsive" alt="Rounded Image">
+                                        </a>
+                                        <div href="#paper-kit" class="img-details">
+                                            <div class="author">
+                                                <img src="assets/img/faces/clem-onojeghuo-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                            </div>
+                                            <p>Chet Faker</p>
+                                            <app-SeeMoreProduct-component></app-SeeMoreProduct-component>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="col-xs-3 col-sm-6 col-md-8">
+                                        <a href = "#/user-profile" >                            
+                                            <h4 class="images-title">Free</h4>
+                                            <img src="assets/img/uriel-soberanes.jpg" class="img-rounded img-responsive" alt="Rounded Image">
+                                        </a>
+                                        <div href="#paper-kit" class="img-details">
+                                            <div class="author">
+                                                <img src="assets/img/faces/clem-onojeghuo-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                            </div>
+                                            <p>Chet Faker</p>
+                                            <app-SeeMoreProduct-component></app-SeeMoreProduct-component>
+                                        </div>
+                                    </div> -->
+
+                                <div class="col">
+                                    <div class="col-xs-12 col-sm-12 col-md-8 offset-md-1">
+                                        <!-- <h4 class="images-title">Circle Image</h4> -->
+                                        <img src="assets/img/faces/ayo-ogunseinde-2.jpg" 
+                                                class="img-rounded img-no-padding img-responsive" 
+                                                        alt="Rounded Image">
+                                        <p class="text-center">Joe Gardner</p>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-8 offset-md-1">
+                                        <!-- <h4 class="images-title">Circle Image</h4> -->
+                                        <img src="assets/img/faces/joe-gardner-2.jpg" 
+                                                class="img-rounded img-no-padding img-responsive" 
+                                                        alt="Rounded Image">
+                                        <p class="text-center">Joe Gardner</p>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-8 offset-md-1">
+                                        <!-- <h4 class="images-title">Thumbnail</h4> -->
+                                        <img src="assets/img/faces/clem-onojeghuo-3.jpg" 
+                                                class="img-rounded img-no-padding img-responsive" 
+                                                        alt="Rounded Image">
+                                        <p class="text-center">Clem onojeghuo</p>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-8 offset-md-1">
+                                        <!-- <h4 class="images-title">Thumbnail</h4> -->
+                                        <img src="assets/img/faces/kaci-baum-2.jpg" 
+                                                class="img-rounded img-no-padding img-responsive" 
+                                                        alt="Rounded Image">
+                                        <p class="text-center">Kaci Baum</p>
+                                    </div>
+                                </div>   
+                            
+                            </div>
+                       </div>
+                     </div>
+
+                <div class="col" >
                     
-                    <br/>
                             <div id="images">
                                 <div class="container">
 
                                     <!-- NOTICIAS---------------------- -->
                                     <!-- --------------------------------- -->
 
-                                    <div class="typography-line text-center text-danger">
+                                    <!-- <div class="typography-line text-center text-danger">
                                         <h2>
-                                            News    
+                                            News
                                         </h2>
                                         
                                         <br />
@@ -134,7 +356,6 @@
                                                             <div class="card-block">
                                                                 <a href="#paper-kit">
                                                                     <div class="author">
-                                                                        <!-- <h4 class="card-title">Robert Orben</h4> -->
                                                                         <h6 class="card-category">Brujas en planet R</h6>
                                                                     </div>
                                                                 </a>
@@ -142,7 +363,6 @@
                                                                 The strength of the team is each individual member. The strength of each member is the team. If you can laugh together, you can work together, silence isn’t golden, it’s deadly.
                                                                 </p>
                                                             </div>
-                                                            <!-- <a href="javascript:void(0)">Show more</a> -->
                                                             <app-modal-component></app-modal-component>
                                                         </div>
                                                     </div>
@@ -157,7 +377,6 @@
                                                             <div class="card-block">
                                                                 <a href="#paper-kit">
                                                                     <div class="author">
-                                                                        <!-- <h4 class="card-title">Robert Orben</h4> -->
                                                                         <h6 class="card-category">Developer canta super bien</h6>
                                                                     </div>
                                                                 </a>
@@ -165,7 +384,6 @@
                                                                 The strength of the team is each individual member. The strength of each member is the team. If you can laugh together, you can work together, silence isn’t golden, it’s deadly.
                                                                 </p>
                                                             </div>
-                                                            <!-- <a href="javascript:void(0)">Show more</a> -->
                                                             <app-modal-component></app-modal-component>
                                                         </div>
                                                     </div>
@@ -180,7 +398,6 @@
                                                             <div class="card-block">
                                                                 <a href="#paper-kit">
                                                                     <div class="author">
-                                                                        <!-- <h4 class="card-title">Robert Orben</h4> -->
                                                                         <h6 class="card-category">Polaco violinista volador</h6>
                                                                     </div>
                                                                 </a>
@@ -188,7 +405,6 @@
                                                                 The strength of the team is each individual member. The strength of each member is the team. If you can laugh together, you can work together, silence isn’t golden, it’s deadly.
                                                                 </p>
                                                             </div>
-                                                            <!-- <a href="javascript:void(0)">Show more</a> -->
                                                             <app-modal-component></app-modal-component>
                                                         </div>
                                                     </div>
@@ -203,7 +419,6 @@
                                                             <div class="card-block">
                                                                 <a href="#paper-kit">
                                                                     <div class="author">
-                                                                        <!-- <h4 class="card-title">Robert Orben</h4> -->
                                                                         <h6 class="card-category">Polaco violinista volador</h6>
                                                                     </div>
                                                                 </a>
@@ -211,7 +426,6 @@
                                                                 The strength of the team is each individual member. The strength of each member is the team. If you can laugh together, you can work together, silence isn’t golden, it’s deadly.
                                                                 </p>
                                                             </div>
-                                                            <!-- <a href="javascript:void(0)">Show more</a> -->
                                                             <app-modal-component></app-modal-component>
                                                         </div>
                                                     </div>
@@ -220,7 +434,9 @@
                                                 </div>
                                             </div>
                                         </div>    
-                                    </div>
+                                    </div> -->
+
+                                    <app-artists></app-artists>
 
                                     <div class="typography-line text-center text-danger">
                                         <h2>Artists</h2>
@@ -255,7 +471,7 @@
                                                             alt="Rounded Image">
                                             <p class="text-center">Kaci Baum</p>
                                         </div>
-                                    </div>   
+                                    </div>                                    
 
                                     <div class="row justify-content-center">
 
