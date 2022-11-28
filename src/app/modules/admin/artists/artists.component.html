@@ -5,7 +5,7 @@
 
         <h3>Planet Records.</h3>
 
-        <div class="motto text-center">
+        <div class="motto text-center text-danger">
             <h2>
                 Artists
             </h2>
@@ -33,7 +33,7 @@
         <div class="row">
             <div class="col-md-11">
                 <!-- <button type="button" class="btn btn-info float-right">Add News</button> -->
-                <app-add-artist class="float-right"></app-add-artist>
+                <app-add-artist *ngIf="idAdmin" class="float-right"></app-add-artist>
             </div>
         </div>
         <br/>
