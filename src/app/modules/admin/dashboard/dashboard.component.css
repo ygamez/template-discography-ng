@@ -76,3 +76,96 @@ mask bg-gradient-danger opacity-8 {
         left: 50%;
         transition: all 0.15s ease;
       }
+      .img-red{
+        height: 200px;
+        background-color: rgb(61, 3, 3);
+        color: #fff;
+        width: 100%;
+        height: 200px;
+        /* height: 550px; */
+      }
+
+      
+mask bg-gradient-danger opacity-8 {
+  -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      --blue: #5e72e4;
+      --indigo: #5603ad;
+      --purple: #8965e0;
+      --pink: #f3a4b5;
+      --red: #f5365c;
+      --orange: #fb6340;
+      --yellow: #ffd600;
+      --green: #2dce89;
+      --teal: #11cdef;
+      --cyan: #2bffc6;
+      --gray: #8898aa;
+      --gray-dark: #32325d;
+      --lighter: #e9ecef;
+      --primary: #5e72e4;
+      --secondary: #f7fafc;
+      --success: #2dce89;
+      --info: #11cdef;
+      --warning: #fb6340;
+      --danger: #f5365c;
+      --light: #adb5bd;
+      --dark: #212529;
+      --default: #172b4d;
+      --white: #fff;
+      --neutral: #fff;
+      --darker: black;
+      --breakpoint-xs: 0;
+      --breakpoint-sm: 576px;
+      --breakpoint-md: 768px;
+      --breakpoint-lg: 992px;
+      --breakpoint-xl: 1200px;
+      --font-family-sans-serif: Open Sans, sans-serif;
+      --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-family: Open Sans, sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #525f7f;
+      text-align: left;
+      box-sizing: border-box;
+      background: linear-gradient(87deg, #f5365c 0, #f56036 100%) !important;
+      opacity: 0.9 !important;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: all 0.15s ease;
+  }
+
+  .fill-opacity-8 {
+      fill-opacity: 0.8;
+    }
+.opacity-8 {
+  opacity: 0.7 !important;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.15s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mask {
+    transition: none;
+  }
+}
+
+.bg-gradient-danger {
+  background: linear-gradient(87deg, #f5365c 0, #f56036 100%) !important;
+}
+
+.aling-lefth{
+  margin-left: -950px;
+  /* margin-left: auto; */
+  margin-top: 70px ;
+}

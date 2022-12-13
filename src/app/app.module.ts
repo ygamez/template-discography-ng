@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
@@ -20,6 +20,9 @@ import { UserProfileComponent } from './modules/admin/user-profile/user-profile.
 import { NewsComponent } from './modules/admin/news/news.component';
 import { AddNewsComponent } from './modules/admin/news/components/add-news/add-news.component';
 import { AddArtistComponent } from './modules/admin/artists/addArtist/add-artist/add-artist.component';
+import { CategoriesComponent } from './modules/admin/categories/categories.component';
+import { AddProductsComponent } from './modules/admin/products/add-products/add-products.component';
+
 
 
 @NgModule({
@@ -35,7 +38,10 @@ import { AddArtistComponent } from './modules/admin/artists/addArtist/add-artist
     UserProfileComponent,
     NewsComponent,
     AddNewsComponent,
-    AddArtistComponent
+    AddArtistComponent,
+    CategoriesComponent,
+    AddProductsComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -45,6 +51,8 @@ import { AddArtistComponent } from './modules/admin/artists/addArtist/add-artist
     ComponentsModule,
     ExamplesModule,
     AppRoutingModule,
+    ReactiveFormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

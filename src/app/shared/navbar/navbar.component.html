@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="500">
     <div class="container">
         <div class="navbar-translate">
-            <a class="navbar-brand" href="#/dashboard">Dashboard</a>
+            <a class="navbar-brand" href="#/dashboard">HOME</a>
             <div ngbDropdown class="navbar-brand d-inline-block dropdown-primary">
                 <a class="nav-link red screen-reader-text" id="dropdownBasic1" ngbDropdownToggle>IDIOMA
                     <i class="fa fa-language"></i>
@@ -19,8 +19,8 @@
             </button>
 
         </div>
-        <div class="navbar-collapse" id="navbarToggler">
-            <ul class="navbar-nav ml-auto">
+        <div class="navbar-collapse " id="navbarToggler">
+            <ul class="navbar-nav  ml-auto">
                 <li class="nav-item" *ngIf="!isDocumentation()">
                     <a class="nav-link"  title="News" data-placement="bottom" href="#/news" >
                         <i class="fa fa-newspaper-o"></i>
@@ -34,9 +34,15 @@
                     </a>
                 </li>
                 <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="Forsales" data-placement="bottom" [routerLink]="['/forsales']" >
+                    <a class="nav-link" rel="tooltip" title="Forsales" data-placement="bottom" [routerLink]="['#/forsales']" >
                         <i class="fa fa-shopping-bag"></i>
-                        <p>Forsales</p>
+                        <p>Media</p>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" title="Generos" data-placement="bottom" href="#/forsales" >
+                        <i class="fa fa-briefcase"></i>
+                        <p>Tienda</p>
                     </a>
                 </li>
                 <li class="nav-item" *ngIf="!isDocumentation()">
@@ -45,12 +51,7 @@
                         <p>Music</p>
                     </a>
                 </li>
-                <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="Generos" data-placement="bottom" href="/forsales" >
-                        <i class="fa fa-briefcase"></i>
-                        <p>Generos</p>
-                    </a>
-                </li>
+                
                 
 
                 <!-- <li class="nav-item">
@@ -84,10 +85,10 @@
                             <li class="nav-item">
                                 <a class="nav-link" title="Profile" data-placement="bottom" href="#/user-profile"><i class="nc-icon nc-single-02" aria-hidden="true"></i></a>
                             </li>
-                            <li class="nav-item ">
-                                <div ngbDropdown class="dropdown" placement="bottom-left">
-                                <a class="nav-link" id="dropdownBasic1" ngbDropdownToggle><i class="nc-icon nc-settings-gear-65" aria-hidden="true"></i></a>
-                                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
+                            <li class="nav-item">
+                                <div ngbDropdown class="" placement="bottom-left">
+                                <a class="nav-link dropdown-link" id="dropdownBasic1" ngbDropdownToggle><i class="nc-icon nc-settings-gear-65" aria-hidden="true"></i></a>
+                                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-notification">
                                         <a class="dropdown-item">News</a>
                                         <a class="dropdown-item">Sales</a>
                                         <a class="dropdown-item">Products</a>

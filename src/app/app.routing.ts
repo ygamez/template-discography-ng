@@ -16,6 +16,7 @@ import { UserProfileComponent } from './modules/admin/user-profile/user-profile.
 import { NewsComponent } from './modules/admin/news/news.component';
 import { AddNewsComponent } from './modules/admin/news/components/add-news/add-news.component';
 import { AddArtistComponent } from './modules/admin/artists/addArtist/add-artist/add-artist.component';
+import { AddProductsComponent } from './modules/admin/products/add-products/add-products.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
@@ -32,7 +33,8 @@ const routes: Routes =[
     { path: 'addartists',      component: AddArtistComponent },
     { path: 'forsales',      component: ForsalesComponent},
     { path: 'news',      component: NewsComponent},
-    { path: 'addnews',      component: AddNewsComponent}
+    { path: 'addnews',      component: AddNewsComponent},
+    { path: 'addproducts',      component: AddProductsComponent}
 ];
 
 @NgModule({

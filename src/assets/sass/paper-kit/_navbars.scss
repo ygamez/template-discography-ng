@@ -2,7 +2,7 @@
     .nav-item{
         .nav-link:hover,
         .nav-link:focus{
-            background-color: transparent;
+            background-color: #11da1b;
         }
     }
 }
@@ -340,10 +340,10 @@
 // stefan making edits
 
 .navbar-light .navbar-nav .nav-link:hover{
-    color: $red-color;
+    color: $red-color !important;
 }
 
-.red{
+.red-color{
     color: #ff0000;
 }
 .collapse .navbar-text{

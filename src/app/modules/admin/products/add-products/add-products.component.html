@@ -1,0 +1,210 @@
+<div class="page-header" data-parallax="true" style="background-image: url('./assets/img/planet/1558268350.jpg');">
+    <div class="filter"></div>
+    <div class="container">
+
+        <h3>PlanetRecords</h3>
+
+        <div class="motto text-center">
+            <!-- <h2>
+                - Add Products
+            </h2> -->
+            
+            <br />
+            <!-- <a href="https://www.youtube.com/watch?v=CfihYWRWRTQ" class="btn btn-outline-neutral btn-round"><i class="fa fa-play"></i>Watch video</a> -->
+            <!-- <button type="button" class="btn btn-outline-neutral btn-round">Download</button> -->
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="section text-center">
+    <div class="container">
+
+        <div class="card">
+            <h5 class="card-header bg-danger">Add Product</h5>
+            <div class="card-body">
+                <div class="mg-top col-8 col-sm-10 col-md-8">
+                    <div class="mg-top form-group row">
+                        <label class="col-4 col-sm-4 col-md-2" for="name">{{ 'Name'}} *</label>
+                        <div class="col-7 col-sm-7 col-md-6">
+                            <input class="form-control" id="name" name="name" formControlName="name"  nbInput placeholder="{{ 'product.index.name'}}" fullWidth status="primary" type="text">
+                            <span class="text-danger" *ngIf="entityForm.hasError('required', ['name']) && entityForm.submitted" for="name">
+                    Required Name <i class="fa fa-group" aria-hidden="true"></i>
+                  </span>
+                        </div>
+                    </div>
+                    <div class="mg-top form-group row">
+                        <label class="col-4 col-sm-4 col-md-2" for="sku">
+                            Type *
+                        </label>                        
+                        <div class="col-4 col-sm-4 col-md-2">
+                            
+                            <select class="btn show form-select bg-gradient-danger navbar-toggler-right dropdown-toggle" aria-label="Default select example">
+                              <option selected>Select type of product</option>
+                              <option value="1">Type One</option>
+                              <option value="2">Type Two</option>
+                              <option value="3">Type Three</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="mg-top form-group row">
+                        <label class="col-md-2" for="logo">Imagen of Product</label>
+                        <div class="col-4">
+                            <div class="">
+                                <input type="file" class="" id="logoFile" formControlName="logoFile"
+                                    aria-describedby="logo" 
+                                    
+                                    title="haga clic para cargar el archivo">
+                            </div>
+                            <!-- <div class="illustration-preview rounded shadow mt-3">
+                                <img [src]="logoUri" 
+                                alt="image upload preview"  
+                                class="img-fluid bg-white" />
+                            </div> -->
+                            <!-- <button nbButton status="danger" size="tiny" class="mt-2" (click)="delete('logo')">
+                                {{'general.delete' | translate }}
+                            </button> -->
+                        </div>
+                    </div>
+
+                    <div class="mg-top form-group row">
+                        <label class="col-4 col-sm-4 col-md-2" for="sale-price">{{ 'product.index.salePrice'}} (<span *ngIf="currency">{{currency.symbol}}</span> Precio *</label>
+                        <div class="col-7 col-sm-7 col-md-6">
+                            <input class="form-control" id="sale-price" name="salePrice" formControlName="salePrice"  nbInput placeholder="{{ 'product.index.salePrice'}} " fullWidth status="primary" type="text">
+                            <span class="text-danger" *ngIf="entityForm.hasError('required', ['salePrice']) && entityForm.submitted" for="sale-price">{{ 'product.form.requiredSalePrice'}} </span>
+                        </div>
+                    </div>
+                    <!-- <div class="mg-top form-group row">
+                        <label class="col-4 col-sm-4 col-md-2" for="purchase-price">{{ 'product.index.purchasePrice'}}  (<span *ngIf="currency">{{currency.symbol}}</span>) *</label>
+                        <div class="col-7 col-sm-7 col-md-6">
+                            <input class="form-control" id="purchase-price" name="purchasePrice" formControlName="purchasePrice"  nbInput placeholder="{{ 'product.index.purchasePrice'}}" fullWidth status="primary" type="text">
+                            <span class="text-danger" *ngIf="entityForm.hasError('required', ['purchasePrice']) && entityForm.submitted" for="purchase-price"> {{ 'product.form.requiredPurchasePrice'}}</span>
+                        </div>
+                    </div> -->
+                    <!-- <div class="mg-top form-group row">
+                        <label class="col-4 col-sm-4 col-md-2" for="category">{{ 'product.index.category'}} *</label>
+                        <div class="col-4">
+                            <select id="category" name="category" formControlName="categoryId"  placeholder="product.index.category" fullWidth status="primary">
+                                <option *ngFor="let category of categories" [(value)]="category.id">{{category.name}}</option>
+                            </select>
+                            <div>
+                                <span class="text-danger" *ngIf="entityForm.hasError('required', ['categoryId']) && entityForm.submitted" for="category">
+                                    {{ 'product.form.requiredCategory'}}
+                                </span>
+                            </div>
+                            <a routerLink="/dashboard/setting-list/category/create" nbButton class="mt-2" status="basic" size="tiny"> -->
+                                <!-- <icon icon="plus"></icon> {{ 'product.form.btnNewCategory'}} -->
+                            <!-- </a>
+                        </div>
+                    </div> -->
+                    <!-- <div class="mg-top form-group row">
+                        <label class="col-4 col-sm-4 col-md-2" for="tax">{{ 'product.index.tax'}}</label>
+                        <div class="col-4">
+                            <select id="tax" name="tax" formControlName="taxId"  placeholder="'product.index.tax" fullWidth status="primary">
+                                <option *ngFor="let tax of taxes" [(value)]="tax.id">{{tax.name}} ({{tax.rate}}%)</option>
+                            </select>
+                        <a routerLink="/dashboard/setting-list/taxes/create" nbButton class="mt-2" status="basic" size="tiny"> -->
+                            <!-- <icon icon="plus"></icon> {{ 'product.form.btnNewTax'}} -->
+                        <!-- </a>
+                        </div>
+                    </div> -->
+                    <div class="mg-top form-group row">
+                        <label class="col-4 col-sm-4 col-md-2" for="description">Description of Product</label>
+                        <div class="col-7 col-sm-7 col-md-6">
+                            <textarea class="form-control" id="description" name="description" formControlName="description" nbInput placeholder="{{ 'product.form.description'}}" fullWidth status="primary" rows="6"></textarea>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="mg-top form-group row">
+                    <div class="offset-4 offset-sm-4 offset-md-2 col-7 col-sm-7 col-md-6">
+                        <button type="submit" class="btn btn-info"
+                        nbSpinner="loading"
+                         status="primary" ><i class="fa fa-plus"></i>
+                         Add
+                        </button>
+                    </div>
+                </div>
+
+                <br/><br/>
+            </div>
+
+          </div>    
+
+    </div>
+</div>
+
+<div class="section section-dark text-center">
+    <div class="container">
+        <!-- <h2 class="title">Artista</h2> -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-profile card-plain">
+                    <div class="card-avatar">
+                        <a href="#avatar"><img src="./assets/img/faces/clem-onojeghuo-3.jpg" alt="..."></a>
+                    </div>
+                    <div class="card-block">
+                        <a href="#paper-kit">
+                            <div class="author">
+                                <h4 class="card-title">John Newman</h4>
+                                <h6 class="card-category">Product Manager</h6>
+                            </div>
+                        </a>
+                        <p class="card-description text-center">
+                        Teamwork is so important that it is virtually impossible for you to reach the heights of your capabilities or make the money that you want without becoming very good at it.
+                        </p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter"></i></a>
+                        <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-google-plus"></i></a>
+                        <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-linkedin"></i></a>
+                    </div>                    
+                </div>                
+            </div>
+            
+        </div>
+        <div class="section landing-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mr-auto ml-auto">
+                        <h2 class="text-center">Keep in touch?</h2>
+                        <form class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Name</label>
+                                    <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text"><i class="nc-icon nc-single-02"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Name" (focus)="focus=true" (blur)="focus=false" >
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Email</label>
+                                    <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text">  <i class="nc-icon nc-email-85"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Email" (focus)="focus1=true" (blur)="focus1=false" autocomplete="off" >
+                                    </div>
+                                </div>
+                            </div>
+                            <label>Message</label>
+                            <textarea class="form-control" rows="4" placeholder="Tell us your thoughts and feelings..."></textarea>
+                            <div class="row">
+                                <div class="col-md-4 mr-auto ml-auto">
+                                    <button class="btn btn-danger btn-lg btn-fill">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+</div>
+
