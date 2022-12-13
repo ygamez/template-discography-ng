@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-products.component.css']
 })
 export class AddProductsComponent implements OnInit {
+addAttachment($event: any) {
+throw new Error('Method not implemented.');
+}
+handleClick() {
+throw new Error('Method not implemented.');
+}
 entityForm: any;
 currency: any;
 product: any;

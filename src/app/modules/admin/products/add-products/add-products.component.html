@@ -48,11 +48,11 @@
 
                     </div>
 
-                    <div class="mg-top form-group row mb-4">
-                        <label class="col-3" for="logo">{{'general.companylogo' }}</label>
-                        <div class="col-8">
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="logoFile" formControlName="logoFile"
+                    <div class="mg-top form-group row">
+                        <label class="col-md-2" for="logo">Imagen of Product</label>
+                        <div class="col-4">
+                            <div class="">
+                                <input type="file" class="" id="logoFile" formControlName="logoFile"
                                     aria-describedby="logo" 
                                     
                                     title="haga clic para cargar el archivo">
@@ -82,7 +82,7 @@
                             <span class="text-danger" *ngIf="entityForm.hasError('required', ['purchasePrice']) && entityForm.submitted" for="purchase-price"> {{ 'product.form.requiredPurchasePrice'}}</span>
                         </div>
                     </div> -->
-                    <div class="mg-top form-group row">
+                    <!-- <div class="mg-top form-group row">
                         <label class="col-4 col-sm-4 col-md-2" for="category">{{ 'product.index.category'}} *</label>
                         <div class="col-4">
                             <select id="category" name="category" formControlName="categoryId"  placeholder="product.index.category" fullWidth status="primary">
@@ -93,22 +93,22 @@
                                     {{ 'product.form.requiredCategory'}}
                                 </span>
                             </div>
-                            <a routerLink="/dashboard/setting-list/category/create" nbButton class="mt-2" status="basic" size="tiny">
+                            <a routerLink="/dashboard/setting-list/category/create" nbButton class="mt-2" status="basic" size="tiny"> -->
                                 <!-- <icon icon="plus"></icon> {{ 'product.form.btnNewCategory'}} -->
-                            </a>
+                            <!-- </a>
                         </div>
-                    </div>
-                    <div class="mg-top form-group row">
+                    </div> -->
+                    <!-- <div class="mg-top form-group row">
                         <label class="col-4 col-sm-4 col-md-2" for="tax">{{ 'product.index.tax'}}</label>
                         <div class="col-4">
                             <select id="tax" name="tax" formControlName="taxId"  placeholder="'product.index.tax" fullWidth status="primary">
                                 <option *ngFor="let tax of taxes" [(value)]="tax.id">{{tax.name}} ({{tax.rate}}%)</option>
                             </select>
-                        <a routerLink="/dashboard/setting-list/taxes/create" nbButton class="mt-2" status="basic" size="tiny">
+                        <a routerLink="/dashboard/setting-list/taxes/create" nbButton class="mt-2" status="basic" size="tiny"> -->
                             <!-- <icon icon="plus"></icon> {{ 'product.form.btnNewTax'}} -->
-                        </a>
+                        <!-- </a>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="mg-top form-group row">
                         <label class="col-4 col-sm-4 col-md-2" for="description">Description of Product</label>
                         <div class="col-7 col-sm-7 col-md-6">

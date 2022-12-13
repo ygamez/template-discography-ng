@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NumericLiteral } from 'typescript';
 
 
 
@@ -10,6 +11,7 @@ import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class ArtistsComponent implements OnInit {
   page: number = 1;
+  idAdmin: number ;
 
   constructor( ) { 
    }
