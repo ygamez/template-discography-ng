@@ -23,6 +23,7 @@ import { AddArtistComponent } from './modules/admin/artists/addArtist/add-artist
 import { CategoriesComponent } from './modules/admin/categories/categories.component';
 import { AddProductsComponent } from './modules/admin/products/add-products/add-products.component';
 import { CateroriesComponent } from './shared/footer/caterories/caterories.component';
+import { MusicComponent } from './modules/admin/music/music.component';
 
 
 
@@ -42,6 +43,7 @@ import { CateroriesComponent } from './shared/footer/caterories/caterories.compo
     AddArtistComponent,
     CategoriesComponent,
     AddProductsComponent,
+    MusicComponent,
     // CateroriesComponent,
     
   ],
