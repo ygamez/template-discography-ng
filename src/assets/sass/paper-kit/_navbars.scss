@@ -36,7 +36,30 @@
         }
         p{
             margin: 0px 0px;
-            color: #9A9A9A !important;
+            color: #df0d0d !important;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 1.5em;
+            padding: 15px 0;
+        }
+        p:hover{
+            color: #403D39 !important;
+        }
+    }
+    .nav-link-red{
+        i{
+            font-size: 16px;
+            position: relative;
+            top: 4px;
+            right: 3px;
+        }
+        [class^="fa"]{
+            top: 2px;
+        }
+        p{
+            margin: 0px 0px;
+            color: #830909 !important;
             text-transform: uppercase;
             font-weight: 600;
             font-size: 12px;
