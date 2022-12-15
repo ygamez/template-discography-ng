@@ -22,6 +22,7 @@ import { AddNewsComponent } from './modules/admin/news/components/add-news/add-n
 import { AddArtistComponent } from './modules/admin/artists/addArtist/add-artist/add-artist.component';
 import { CategoriesComponent } from './modules/admin/categories/categories.component';
 import { AddProductsComponent } from './modules/admin/products/add-products/add-products.component';
+import { CateroriesComponent } from './shared/footer/caterories/caterories.component';
 
 
 
@@ -41,6 +42,7 @@ import { AddProductsComponent } from './modules/admin/products/add-products/add-
     AddArtistComponent,
     CategoriesComponent,
     AddProductsComponent,
+    // CateroriesComponent,
     
   ],
   imports: [
