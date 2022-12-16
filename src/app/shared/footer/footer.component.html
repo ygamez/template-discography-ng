@@ -4,25 +4,70 @@
             <nav class="footer-nav">
                 
             </nav>
-            <div class="@">
-                <div class="col-4 mt-3">
-                    <span class="mt-3 label-info">Noticias de Interes</span>
+            	
+            <hr width="97%" />
 
-                    <div class="list-group">
-                        <!-- <a href="#" class="list-group-item list-group-item-action active">
-                          Cras justo odio
-                        </a> -->
-                        <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-                        <a href="#" class="list-group-item list-group-item-action">Farandula</a>
-                        <a href="#" class="list-group-item list-group-item-action">Lo mas pegao</a>
-                        <a href="#" class="list-group-item list-group-item-action disabled">Forum de Dabates</a>
-                      </div>
+            <div class="row">
+                <div class="col-6 mt-6">
+                    <span class="label label-info mt-2">Noticias de Interes</span>
+                    <!-- <h4 class="label mt-3 text-info label-danger">Noticias de Interes</h4> -->
+
+                    <div class="row mt-2">
+                        <div class="col-7">
+                          <div class="list-group" id="list-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action " id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Productos en venta</a>
+                            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Lo más nuevo</a>
+                            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Farándula</a>
+                            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Programación semanal</a>
+                          </div>
+                        </div>
+                        <!-- <div class="col-6">
+                          <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
+                            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+                            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+                            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+                          </div>
+                        </div> -->
+                    </div>
                 </div>
 
+                    
+                    <div class="col-md-6">
+                        <div class="tim-title">
+                            <h3>Navigation Tabs</h3>
+                        </div>
+    
+                        <div class="nav-tabs-navigation">
+                            <div class="nav-tabs-wrapper">
+                                <ngb-tabset [justify]="'center'">
+                                    <ngb-tab title="Home">
+                                        <ng-template ngbTabContent>
+                                            <p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient. With a smooth metal surface that seamlessly meets the new Retina HD display.</p>
+                                        </ng-template>
+                                    </ngb-tab>
+                                    <ngb-tab title="Profile">
+                                        <ng-template ngbTabContent>
+                                            <p>Here is your profile.</p>
+                                        </ng-template>
+                                    </ngb-tab>
+                                    <ngb-tab title="Messages">
+                                        <ng-template ngbTabContent>
+                                            <p>Here are your messages.</p>
+                                        </ng-template>
+                                    </ngb-tab>
+                                </ngb-tabset>
+                            </div>
+                        </div>
+    
+                </div>
+
+                <hr width="97%" />
+                
                 <p>    
                     PLANET RECORDS | Independent Life Style
-Napoli * Miami * New York * Santo Domingo * La Habana - Entre las Más Poderosas Disqueras Independientes a Nivel Mundial - Audio/Video Streaming Gratis!
-Contacto: www.facebook.com/PlanetRecordsOfficial
+                    Napoli * Miami * New York * Santo Domingo * La Habana - Entre las Más Poderosas Disqueras Independientes a Nivel Mundial - Audio/Video Streaming Gratis!
+                    Contacto: www.facebook.com/PlanetRecordsOfficial
                 </p>
                 <span class="copyright">
                     © {{test | date: 'yyyy'}}, made with <i class="fa fa-heart heart"></i> by (EE)Team
